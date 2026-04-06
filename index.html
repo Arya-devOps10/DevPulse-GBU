@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dev_pulse.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+
+    <title>DevPulse GBU | Your Unified Developer Identity</title>
+</head>
+
+<body>
+    <!-- -------------------------------------Header Section----------------------------------------------------->
+    <header>
+        <!-- ---------------------------------Navbar Section-------------------------------------------------- -->
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Logo.jpeg" alt="DevPulse Logo">
+                <a href="#">Dev<span>Pulse</span></a>
+            </div>
+            <!-- ------------------------------------------Elements in nav bar--------------------------------------------- -->
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="#stats">Unified Stats</a></li>
+                <li><a href="#projects">Showcase</a></li>
+            </ul>
+
+            <!-- diffrent class for Connect identity button/feature -->
+            <div class="nav-actions">
+                <a href="#connect" class="connect-btn">Connect Identity</a>
+            </div>
+            <!-- Adding dark and light mode feature -->
+            <div class="mode-toggle" id="dark-mode-btn">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <!-- Adding class menue toggle so that toggle feature appears while we are using it on mobile -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!----------------------------------------- Main section  --------------------------------------------------->
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <!-- -------------------------------Left side of hero section ---------------------------------------->
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Sync Your <br> <span>Developer Pulse</span>
+                    </h1>
+                    <p class="hero-description">
+                        Connect your GitHub and LeetCode to build a unified identity.
+                        Track your streaks, contributions, and projects in one powerful dashboard.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#connect" class="btn-main">Get Started</a>
+                        <a href="#demo" class="btn-outline">
+                            <i class="fa-solid fa-play"></i> View Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ---------------------------------right side of hero section ------------------------------------>
+                <div class="hero-visual">
+                    <!-- creating heapmap feature to show the small squares to mark -->
+                    <div class="glass-card">
+                        <div class="card-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="skeleton-chart">
+                                <div class="bar" style="height: 60%;"></div>
+                                <div class="bar" style="height: 80%;"></div>
+                                <div class="bar" style="height: 40%;"></div>
+                                <div class="bar" style="height: 90%;"></div>
+                                <div class="bar" style="height: 50%;"></div>
+                            </div>
+                            <p>Real-time Stats Syncing...</p>
+                        </div>
+                    </div>
+                    <div class="hero-glow"></div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <script src="dev_pulse.js"></script>
+</body>
+
+</html>
