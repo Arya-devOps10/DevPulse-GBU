@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPulse | Unified Stats</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .detailed-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .platform-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--primary-cyan);
+        }
+        .progress-bar {
+            background: rgba(255,255,255,0.1);
+            height: 10px;
+            border-radius: 5px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        .progress-fill {
+            background: var(--primary-cyan);
+            height: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="Logo.jpeg" alt="Logo">
+                <a href="index.html">Dev<span>Pulse</span></a>
+            </div>
+            <nav class="side-nav">
+                <p class="section-label">Menu</p>
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="unified.html" class="active"><i class="fa-solid fa-chart-line"></i> Unified Stats</a>
+                <a href="connect.html"><i class="fa-solid fa-user-group"></i> Connect Us</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="title-bar">
+                <div class="page-name">
+                    <h1>Unified <span>Analytics</span></h1>
+                    <p style="color: var(--text-gray);">Your coding performance across all platforms</p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="detailed-card">
+                    <i class="fa-solid fa-code platform-icon" style="color: #FFA116;"></i>
+                    <h3>LeetCode Progress</h3>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Solved: 145 / 500</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 29%;"></div>
+                    </div>
+                    <ul style="list-style: none; font-size: 0.85rem; color: var(--text-gray);">
+                        <li>Easy: <span style="color: #00B8A3;">80</span></li>
+                        <li>Medium: <span style="color: #FFC01E;">55</span></li>
+                        <li>Hard: <span style="color: #FF375F;">10</span></li>
+                    </ul>
+                </div>
+
+                <div class="detailed-card">
+                    <i class="fa-brands fa-github platform-icon" style="color: #fff;"></i>
+                    <h3>GitHub Metrics</h3>
+                    <div class="heatmap-placeholder" style="margin-top: 10px;">
+                         <img src="https://github-readme-stats.vercel.app/api?username=Arya10&show_icons=true&theme=dark&bg_color=0f172a&border_color=38bdf8" alt="GitHub Stats" style="width: 100%;">
+                    </div>
+                </div>
+
+                <div class="detailed-card">
+                    <i class="fa-solid fa-microchip platform-icon" style="color: #38bdf8;"></i>
+                    <h3>Project Pulse</h3>
+                    <div class="stat-item" style="margin-top: 15px;">
+                        <p>Matrix 3.0 <span style="float: right;">85%</span></p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="stat-item">
+                        <p>CyberShield Tool <span style="float: right;">40%</span></p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 40%; background: #818cf8;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

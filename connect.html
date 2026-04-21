@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPulse | Connect Us</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        .connect-container {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .contact-form-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .social-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .social-item {
+            background: rgba(56, 189, 248, 0.05);
+            border: 1px solid rgba(56, 189, 248, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        .social-item:hover {
+            transform: translateX(10px);
+            background: rgba(56, 189, 248, 0.15);
+            border-color: var(--primary-cyan);
+        }
+        .social-item i { font-size: 1.5rem; color: var(--primary-cyan); }
+        
+        .form-input {
+            width: 100%;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 12px;
+            border-radius: 8px;
+            color: white;
+            margin-bottom: 15px;
+            outline: none;
+        }
+        .form-input:focus { border-color: var(--primary-cyan); }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="Logo.jpeg" alt="Logo">
+                <a href="index.html">Dev<span>Pulse</span></a>
+            </div>
+            <nav class="side-nav">
+                <p class="section-label">Menu</p>
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="unified.html"><i class="fa-solid fa-chart-line"></i> Unified Stats</a>
+                <a href="connect.html" class="active"><i class="fa-solid fa-user-group"></i> Connect Us</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="title-bar">
+                <div class="page-name">
+                    <h1>Get in <span>Touch</span></h1>
+                    <p style="color: var(--text-gray);">Building the future of Cyber Security together</p>
+                </div>
+            </div>
+
+            <div class="connect-container">
+                <div class="contact-form-card">
+                    <h3 style="margin-bottom: 20px;">Send a Message</h3>
+                    <form action="#">
+                        <input type="text" class="form-input" placeholder="Your Name" required>
+                        <input type="email" class="form-input" placeholder="Email Address" required>
+                        <textarea class="form-input" rows="5" placeholder="How can we collaborate?" required></textarea>
+                        <button type="submit" class="submit-btn" style="width: auto; padding: 12px 30px; background: var(--primary-cyan); border:none; border-radius:8px; font-weight:bold; cursor:pointer;">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="social-grid">
+                    <a href="https://github.com/TanishkKaushik7" target="_blank" class="social-item">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-gray);">Check my repositories</p>
+                        </div>
+                    </a>
+                    <a href="#" class="social-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-gray);">Let's connect professionally</p>
+                        </div>
+                    </a>
+                    <a href="mailto:contact@gbu.ac.in" class="social-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-gray);">Drop a formal mail</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
